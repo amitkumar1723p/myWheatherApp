@@ -11,7 +11,7 @@ const fetchdata = async (e) => {
   let val = searchbox.value;
   const arr = val.split(" ");
 
-  if (searchbox.value == " ") {
+  if (searchbox.value == "") {
     errorbox.innerText = "Empty field does not respond";
     iconname.innerText = " ";
     cityname.innerText = " ";
