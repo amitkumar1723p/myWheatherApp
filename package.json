@@ -10,7 +10,8 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon projectmain_file/app.js -e js,hbs"
+    "dev": "nodemon projectmain_file/app.js -e js,hbs",
+    "start": "node projectmain_file/app.js" 
   },
   "keywords": [],
   "type": "module",
