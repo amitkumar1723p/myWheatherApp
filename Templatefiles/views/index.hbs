@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        {{>headtag}}
+        <title>homepage</title>
+
+    </head>
+
+    <body>
+
+        {{!-- Navbar  --}}
+        {{>navbar}}
+
+
+
+        {{!-- Start Main container  --}}
+        <div class="width_90vw  margin_L_R-auto maincontainer">
+            <div class=" sectiondiv flex aling-center justify-center sectiondiv">
+
+                <section class="left_section ">
+                    <div class="test_bg_gree0n textdiv">
+
+                        <h1 class="boldfon homepageheading">Welcome to wheather app</h1>
+                        <p class="homepagepara">Get The Latest <sapn class="span"> Weather Report</sapn> Info of Your
+                            City
+                        </p>
+                        <a href="/wheather"><button class="btn1">Wheather</button></a>
+                        {{!-- /wheather --}}
+                    </div>
+                </section>
+
+                <section class="right_section flex aling-center justify-center flex-colounm">
+
+                    <span class="priveous btn2" id="previous_btn"> ◀</span>
+                    <span class="next btn2" id="next_btn"> ▶</span>
+
+
+                    <figure class="width_100per height_100per   figure figure1">
+
+                        <img src="image/light img.jpg" class="width_100per height_100per">
+
+
+                    </figure>
+                    <figure class="width_100per height_100per   figure figure2">
+
+                        <img src="image/rain iamge2.jpg" class="width_100per height_100per">
+                    </figure>
+
+                    <figure class="width_100per height_100per  figure figure3">
+
+                        <img src="image/city image.jpg" class="width_100per height_100per ">
+
+
+                    </figure>
+
+
+                </section>
+            </div>
+
+
+
+
+        </div>
+        {{>footer}}
+        <script src="https://kit.fontawesome.com/dcee1ae286.js" crossorigin="anonymous"></script>
+        <script src="Javascript/script.js"></script>
+
+
+    </body>
+
+
+</html>

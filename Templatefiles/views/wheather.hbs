@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        {{>headtag}}
+        <title>Wheather page</title>
+    </head>
+
+    <body>
+
+
+        {{!-- Navbar  --}}
+        {{>navbar}}
+
+
+        <div class="width_90vw  margin_L_R-auto maincontainer ">
+            <h1 class="wheather_heading boldfont"> City Wheather Report</h1>
+
+
+
+
+
+            <div class="searchbox flex  justify-center aling-center">
+
+
+
+                <input type="search" id="search" placeholder="Search City Name" autocomplete="off">
+                <input type="button" value="Search" id="searchbtn">
+
+            </div>
+            <div class="databox">
+
+                <div class="top_layer flex ">
+                    <p id="day">Day </p>
+                    <p id="date_month">Date Month</p>
+
+                </div>
+                <div class="main_layer">
+                    <p class="main_layer_1_p" id="error"> </p>
+                    <div class="flex justify_between">
+
+                        <p class="main_layer_2_p " id="cityname"> </p>
+                        <p id="iconname"></p>
+                    </div>
+
+
+                    <div class="main_layer_div">
+                        <p id="temp"> </p>
+                        <p id="icon">
+
+
+
+
+
+
+
+
+                        </p>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+        </div>
+        {{>footer}}
+
+        <script src="https://kit.fontawesome.com/dcee1ae286.js" crossorigin="anonymous"></script>
+        <script src="Javascript/wheather.js"></script>
+    </body>
+
+</html>

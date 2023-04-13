@@ -1,0 +1,720 @@
+ @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@600&family=Overpass:wght@400;800&display=swap');
+
+ header {
+     position: sticky;
+     top: 0;
+     z-index: 4;
+ }
+
+
+ * {
+     font-family: 'Overpass', sans-serif;
+ }
+
+ body {
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+ }
+
+ /* Common css  */
+ .width_90vw {
+     width: 90vw;
+ }
+
+ .boldfont {
+     font-family: 'IBM Plex Sans Thai', sans-serif;
+ }
+
+ /* Css for Navigation bar  */
+
+
+ .title {
+     font-size: 1.4em;
+     margin: 0 3px;
+ }
+
+
+
+ .navbar {
+     background-color: rgb(9 31 43);
+     padding: 20px 0px;
+     position: sticky;
+     top: 0;
+ }
+
+ .ul li a {
+     font-size: 1.2em;
+     margin-left: 37px;
+ }
+
+ .fa {
+     color: brown;
+     font-size: 26px;
+     animation: rotate;
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+     animation-duration: .4s;
+
+
+ }
+
+ .navbar a:hover {
+     color: rgb(0, 152, 253);
+ }
+
+ .navbar a:active {
+     color: rgb(134, 0, 245);
+ }
+
+
+
+
+
+ @keyframes rotate {
+     0% {
+         transform: rotate(0deg);
+     }
+
+
+     100% {
+         transform: rotate(360deg);
+     }
+ }
+
+
+ /* Css for Footer  */
+
+ footer {
+     margin-top: 20px;
+     width: 100%;
+     background-color: rgb(9 31 43);
+     color: white;
+     margin-top: auto;
+     padding: 15px 0;
+     text-align: center;
+     font-size: 1.3em;
+
+ }
+
+
+ /* Css for Index page  */
+ .sectiondiv {
+
+     margin: auto 0;
+     /* height: 81vh; */
+
+ }
+
+ .right_section {
+     margin-top: 30px;
+     width: 48%;
+
+     height: auto;
+     position: relative;
+
+
+ }
+
+
+ .left_section {
+     width: 48%;
+
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     margin-right: 12px;
+
+
+ }
+
+ .btn1 {
+     border-radius: 61px;
+     padding: 7px 9px;
+     margin-top: 3px;
+     font-size: 1em;
+     outline: none;
+     border: none;
+
+
+     background: whitesmoke;
+     box-shadow: 1px 2px 3px 0px black;
+     font-weight: bold;
+     margin-top: 4px;
+     color: #000dff;
+     cursor: pointer;
+ }
+
+ .btn1:active {
+     box-shadow: -1px -2px 3px 0px black;
+ }
+
+ .figure2,
+ .figure3 {
+     display: none;
+
+ }
+
+ .btn2 {
+     font-size: 2em;
+     position: absolute;
+     color: red;
+     z-index: 1;
+     cursor: pointer;
+     background-color: black;
+     display: none;
+
+ }
+
+
+ .priveous {
+     padding: 0px 4px 0px 0px;
+     left: 5px;
+ }
+
+ .next {
+     padding: 0px 0px 0px 4px;
+     right: 5px;
+
+ }
+
+
+ .homepageheading {
+     font-size: 2.2em;
+ }
+
+ .homepagepara {
+     margin-top: 5px;
+     font-size: 1.8em;
+ }
+
+ .span {
+     color: rgb(0, 152, 253);
+ }
+
+
+ /* About page cSS  */
+
+
+ .aboutright_section {
+
+     height: 95%;
+     width: auto;
+     position: relative;
+
+
+ }
+
+ #aboutimage {
+     filter: brightness(0.1)drop-shadow(-1px -4px 0px red);
+ }
+
+ /* Wheather page Css  */
+
+ .maincontainer {
+
+     flex-direction: column;
+     justify-content: center;
+ }
+
+ /* CSS SEARCH BOX  */
+ .searchbox {
+     margin-top: 50px;
+     width: 79%;
+     height: 60px;
+     margin-left: auto;
+     margin-right: auto;
+     background: #101416;
+     padding: 0px 8px;
+     border-radius: 12px;
+
+ }
+
+
+
+ #search {
+     color: white;
+
+     width: 99%;
+     height: 95%;
+     font-size: 1.7em;
+     outline: none;
+     border: none;
+     background: none;
+
+
+
+ }
+
+ #search::placeholder {
+     color: rgb(51, 255, 0);
+ }
+
+ #searchbtn {
+     cursor: pointer;
+     background: none;
+     border: none;
+     margin-left: 4px;
+     height: 75%;
+     font-size: 1.3em;
+     border-radius: 10px;
+     padding: 0 20px;
+     border-radius: -1px;
+     background: beige;
+     box-shadow: 2px 2px 0px 0px #ff1b1b;
+ }
+
+ #searchbtn:active {
+     box-shadow: 2px -2px 0px 0px #ff1b1b;
+     background-color: white;
+ }
+
+ /* CSS DATA BOX  */
+
+ .databox {
+     overflow-wrap: anywhere;
+     margin-left: auto;
+     margin-right: auto;
+     width: 58%;
+     background-color: rgb(20 41 120);
+     margin-top: 35px;
+
+     border-radius: 6px;
+     margin-bottom: 20px;
+
+ }
+
+
+
+
+
+ .top_layer {
+     background-color: rgb(202, 0, 248);
+     font-size: 1.6em;
+     font-weight: bold;
+     width: 100%;
+     justify-content: space-between;
+     padding: 15px 9px;
+     border-radius: 6px;
+
+ }
+
+
+ .main_layer_1_p {
+
+     color: white;
+     font-size: 1.5em;
+     padding: 15px 9px;
+
+ }
+
+ .main_layer_2_p {
+
+     color: rgb(255, 0, 0);
+     font-size: 1.5em;
+     padding: 5px 9px;
+
+ }
+
+ .main_layer_div {
+
+     justify-content: space-between;
+     display: flex;
+     align-items: center;
+
+
+     padding: 4px 0px 23px 9px;
+
+
+ }
+
+ #temp {
+     font-size: 1.7em;
+     color: rgb(0, 255, 26)
+ }
+
+ #icon {
+     color: darkgoldenrod;
+     font-size: 1.8em;
+     /* margin-right: 5px; */
+     width: 165px;
+     text-align: center;
+     /* background-color: rgb(0, 255, 106); */
+
+
+ }
+
+ .font {
+     font-size: 3em;
+ }
+
+ .yellow {
+
+     color: yellow;
+ }
+
+ yellow .wheat {
+     color: wheat;
+ }
+
+ .blue {
+     color: #48b6ff;
+ }
+
+ .yellow_white {
+     color: yellow
+ }
+
+
+
+
+ .wheather_heading {
+     font-size: 2.2em;
+     border-bottom: 3px solid black;
+     margin-top: 17px;
+
+ }
+
+ #iconname {
+     width: 165px;
+     text-align: center;
+     font-size: 1.7em;
+     color: red;
+ }
+
+
+
+
+
+ /* Errorr page css  */
+
+
+
+ .section1 {
+     width: 30%;
+     margin-top: 15px;
+     margin-bottom: 15px;
+     margin-left: auto;
+     margin-right: auto;
+
+ }
+
+ .section1 img {
+     border-radius: 32px;
+     box-shadow: 0px 0px 20px 0px black;
+ }
+
+
+ .gold {
+     background-color: gold;
+ }
+
+ .section2 {
+     text-align: center;
+     margin-bottom: 15px;
+ }
+
+ .section2 p {
+     font-size: 1.5em;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* INDEX PAGE RESPOSIVE CSS  */
+ @media screen and (max-width:1020px) {
+
+
+
+
+
+     .sectiondiv {
+         flex-direction: column;
+         justify-content: flex-start !important;
+
+
+
+     }
+
+     .left_section {
+
+         width: 100%;
+
+         margin: 30px 0;
+         align-items: flex-start;
+         box-sizing: border-box;
+
+
+     }
+
+     .homepagepara {
+         margin-top: 0;
+     }
+
+
+
+     .right_section {
+
+         margin-bottom: 10px;
+
+         width: 70%;
+
+
+
+     }
+
+
+
+
+
+
+
+
+
+
+     .figure {
+
+
+
+
+         width: 100%;
+         height: 100%;
+
+     }
+
+     .figure img {
+         width: 100%;
+         height: 100%;
+     }
+
+
+
+     .figure2 {
+         align-items: flex-end;
+     }
+
+
+
+     /* about page responsive css  */
+
+     .aboutright_section {
+         width: 50%;
+
+         height: auto;
+
+         margin-bottom: 10px;
+
+
+
+     }
+
+
+
+     .aboutleft_section {
+         /* background: green; */
+         margin-bottom: 17px;
+
+         text-align: justify;
+
+     }
+
+     /* Wheathe box Css  */
+     .databox {
+         width: 96%;
+     }
+
+     .searchbox {
+         width: 98%;
+     }
+
+
+
+     /* responsive Error page css  */
+
+     .section1 {
+         width: 45%;
+     }
+
+ }
+
+
+
+
+ /* media querry  max width 535px  */
+ @media screen and (max-width:535px) {
+
+
+     .navbar ul {
+         width: 100%;
+         height: 100%;
+         text-align: center;
+         justify-content: center;
+         padding: 0;
+         margin: 0;
+
+
+         /* visibility: hidden; */
+         display: none;
+     }
+
+
+
+
+     .navbar {
+
+
+         height: 50px;
+         padding: 0;
+         margin: 0;
+         transition-property: height;
+         transition-duration: .1s;
+         transition-timing-function: linear;
+
+     }
+
+
+     .res_display-column {
+         flex-direction: column !important;
+
+     }
+
+     .navbar ul li a {
+         margin-left: 0;
+
+     }
+
+     .navbar ul li {
+         margin-top: 8px;
+     }
+
+     #hamburger_btn {
+         position: absolute;
+         right: 15px;
+         top: 6px;
+         z-index: 1;
+
+     }
+
+     #hamburger_btn p {
+         width: 40px;
+         height: 7px;
+         margin: 4px 0;
+
+         background-color: white;
+
+
+     }
+
+     .maincontainer {
+         width: 97vw;
+     }
+
+     .left_section {
+
+
+
+         font-size: 12px;
+         text-align: center;
+
+     }
+
+     .textdiv {
+         margin: 0;
+     }
+
+
+
+
+     .right_section {
+         width: auto;
+         height: 70%;
+     }
+
+     .aboutright_section {
+         height: auto;
+         width: 63%;
+     }
+
+     /* Css for wheateher page  */
+     .searchbox {
+         width: 100%;
+     }
+
+     .databox {
+         width: 100%;
+     }
+
+     .wheather_heading {
+         font-size: 26px;
+         text-align: center;
+     }
+
+     .searchbox {
+         font-size: 10px;
+         height: 47px;
+
+     }
+
+     #searchbtn {
+
+         padding: 0 13px;
+         height: 65%;
+         font-weight: bold;
+
+
+
+     }
+
+     #search::placeholder {
+
+         font-size: 11px;
+     }
+
+     .databox {
+         font-size: 10px;
+     }
+
+     #icon {
+         width: 103px;
+     }
+
+     #iconname {
+         width: 103px;
+     }
+
+     .main_layer_1_p {
+         text-align: justify;
+     }
+
+
+     /* error responsive css  */
+
+     .section1 {
+         width: 65%;
+         margin-top: 30px;
+     }
+
+     .section2 {
+         font-size: 15px;
+     }
+ }
