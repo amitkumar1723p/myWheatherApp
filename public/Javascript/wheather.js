@@ -13,9 +13,9 @@ const fetchdata = async (e) => {
 
   if (searchbox.value == "") {
     errorbox.innerText = "Empty field does not respond";
-    iconname.innerText = " ";
-    cityname.innerText = " ";
-    temp.innerText = " ";
+    iconname.innerText = "";
+    cityname.innerText = "";
+    temp.innerText = "";
     icon.innerHTML = " ";
   } else {
     searchbox.value = "";
@@ -23,15 +23,13 @@ const fetchdata = async (e) => {
     try {
       let url = `https://api.openweathermap.org/data/2.5/weather?q=${val}&appid=af4ec3760291266002169c9c1f236cac`;
       errorbox.innerText = "your name is match please wait to get response";
-      cityname.innerText = " ";
-      iconname.innerText = " ";
-      temp.innerText = " ";
+      cityname.innerText = "";
+      iconname.innerText = "";
+      temp.innerText = "";
       icon.innerHTML = " ";
       let response = await fetch(url);
       let res_data = await response.json();
-      temp.style.visibility = "visible";
-      icon.style.visibility = "visible";
-
+ 
       errorbox.innerText = "";
 
       cityname.innerText = `${res_data.name} , ${res_data.sys.country}`;
@@ -116,9 +114,7 @@ if (date > 10) {
 
 let navbar = document.querySelector(".navbar");
 let navbar_ul = document.getElementById("navbar_ul");
-console.log(navbar_ul);
 let hamburger_btn = document.getElementById("hamburger_btn");
-console.log(hamburger_btn);
 let nav = true;
 hamburger_btn.addEventListener("click", function () {
   if (nav == true) {

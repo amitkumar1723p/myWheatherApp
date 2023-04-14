@@ -12,7 +12,6 @@ class wheatherController {
         res.render('wheather')
     }
     static mainerror404page = (req, res) => {
-        console.log(req.params)
         res.render('404error')
 
 
@@ -23,11 +22,9 @@ class wheatherController {
     static wheather404errorpage = (req, res) => {
 
         res.render('404error')
-        console.log(req.params)
 
     }
     static about404errorpage = (req, res) => {
-        console.log(req.params)
         res.render('404error')
 
     }

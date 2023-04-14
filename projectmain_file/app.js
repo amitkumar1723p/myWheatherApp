@@ -21,6 +21,5 @@ app.use('/', router)
 //  Define port 
 const port = process.env.Port || 5000
 app.listen(port, "localhost", () => {
-    console.log(`server listen at http://localhost:${port}/`)
 })
 

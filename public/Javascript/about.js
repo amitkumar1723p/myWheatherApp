@@ -1,8 +1,6 @@
 let navbar = document.querySelector('.navbar')
 let navbar_ul = document.getElementById('navbar_ul')
-console.log(navbar_ul)
 let hamburger_btn = document.getElementById('hamburger_btn')
-console.log(hamburger_btn)
 let nav = true
 hamburger_btn.addEventListener('click', function () {
     if (nav == true) {
